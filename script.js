@@ -142,7 +142,11 @@ places.forEach((place) => {
     });
 
 });
+const bounds = places.map(place => place.coordinates);
 
+map.fitBounds(bounds, {
+    padding: [50, 50]
+});
 
 // =========================
 // Statistics
