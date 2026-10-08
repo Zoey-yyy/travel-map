@@ -64,7 +64,9 @@ const places = [
 // Create map
 // =========================
 
-const map = L.map("map").setView([48, 10], 4);
+const map = L.map("map", {
+    scrollWheelZoom: false
+}).setView([48, 10], 4);
 
 
 // Map tiles
